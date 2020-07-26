@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      }
+      form {
+      border: 5px solid #f1f1f1;
+      margin: 80px auto;
+      }
+      input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction:column;
+      
+      }
+      input[type=submit] {
+      background-color: #8ebf42;
+      color: white;
+      padding: 14px 40px;
+      margin: 5px 10px 5px 20px;
+      border: none;
+      cursor: grabbing;
+      width: 100%;
+      }
+      h1 {
+      text-align:center;
+      font-size:18;
+      }
+      input[type=submit]:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: left;
+      margin:24px 100px 12px 60px
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      .err span {
+        color: red;
+        border: 1px solid red;
+        margin: 5px 0px;
+        display:block;
+        width: 100%;
+        padding: 3px 20px;
+      }
+      #login{
+        color:green;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+
+    <form action="#"  id="myForm"  method="post" >
+        <h1>Login Form</h1>
+        <div class="formcontainer">
+            <hr>
+            <p id="login"></p>
+            <div class="container">
+                <label for="email"><strong>Email</strong></label>
+                <input type="text" name="email" id="email" placeholder="Enter Email">
+                <div class="err" id="enterEmail"></div>
+                <br>
+                <label for="password"><Strong>Password</Strong></label>
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <div class="err" id="enterPassword"></div><br>
+            </div>
+            <input type="submit"  " value="Login" >  
+        </div>
+    </form>
+    <Script src="./task3.js">
+       
+
+
+
+    </Script>
+</body>
+</html>
